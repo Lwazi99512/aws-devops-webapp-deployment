@@ -14,3 +14,17 @@ A Java-based web app deployed on AWS EC2 using Maven, VS Code Remote-SSH, and Li
    ```html
    <h2>Hello Lwazi!</h2>
    <p>This is my NextWork web application working!</p>
+## 🔍 Key Takeaways & Lessons Learned
+
+### **Technical Insights**
+- **Linux Dominance**: AWS EC2 works natively with Linux (Amazon Linux 2023) - my Windows setup failed initially  
+- **SSH Keys Are Golden**: `chmod 400 your-key.pem` solves 80% of connection issues  
+- **VS Code Magic**: Remote-SSH extension lets you edit cloud files like local ones  
+
+### **Process Wins**
+- Maven archetypes (`mvn archetype:generate`) automate Java project scaffolding  
+- EC2’s IPv4 DNS is your cloud "street address" for connections  
+
+### **What I’d Do Differently**
+- Automate dependency checks earlier with `mvn dependency:analyze`  
+- Use AWS CloudShell for faster CLI access  
